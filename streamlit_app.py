@@ -8,9 +8,9 @@ import plotly.express as px
 #######################
 # Page configuration
 st.set_page_config(
-    page_title="US Population Dashboard",
+    page_title="Population Dashboard",
     page_icon="🏂",
-    layout="wide",
+    layout="centered",
     initial_sidebar_state="expanded")
 
 alt.themes.enable("dark")
