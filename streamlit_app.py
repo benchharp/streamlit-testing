@@ -187,7 +187,7 @@ def calculate_population_difference(input_df, input_year):
 # Dashboard Main Panel
 col = st.columns((1.5, 4.5, 2), gap='medium')
 
-with col[0]:
+with col[2]:
     st.markdown('#### Gains/Losses')
 
     df_population_difference_sorted = calculate_population_difference(df_reshaped, selected_year)
@@ -249,7 +249,7 @@ with col[1]:
     st.altair_chart(heatmap, use_container_width=True)
     
 
-with col[2]:
+with col[0]:
     st.markdown('#### Top States')
 
     st.dataframe(df_selected_year_sorted,
